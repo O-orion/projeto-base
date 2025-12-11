@@ -1,15 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  selector: 'app-card',
+  imports: [],
+  templateUrl: './card.html',
+  styleUrl: './card.css',
 })
-export class App {
-  protected readonly title = signal('projeto-base');
-  
+export class Card {
   // Este arquivo (.ts) é a parte lógica do componente.
   // Aqui definimos:
   // - As informações do decorator @Component (selector, template, estilos, imports, etc.)
@@ -18,6 +15,4 @@ export class App {
   //
   // Em resumo: o arquivo TypeScript é o “cérebro” do componente,
   // controlando dados, eventos e regras de funcionamento.
-
-
 }
